@@ -1,0 +1,43 @@
+.header-container{
+    position:relative;
+}
+.img-head img{
+    width: 100%; 
+    height:auto;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vehicles{
+    position:absolute;
+    bottom:70%;
+    display:flex;
+    align-items:center;
+}
+
+.vehicle{
+    border-radius:10px;
+    padding:10px;
+    background-color: hotpink;
+    margin:10px;
+    margin-left:110px;
+    height:170px;
+    width:170px;
+    
+    
+}
+.vehicle img{
+    width: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:25px;
+}
+/* .box {
+    width: 300px;
+  }
+  .icon-image {
+    width: 150px;
+  } */
+  
