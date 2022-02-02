@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "vehicleImg": "https://i.ibb.co/2hcLJ6j/Frame.png",
+      "vehicleName": "Bike",
+      "VehicleNumber": 4,
+      "availableSeat": 1,
+      "rent": 20
+    },
+    {
+      "id": 2,
+      "vehicleImg": "https://i.ibb.co/P15wkxM/Frame-2.png",
+      "vehicleName": "Car",
+      "VehicleNumber": 2,
+      "availableSeat": 4,
+      "rent": 35
+    },
+    {
+      "id": 3,
+      "vehicleImg": "https://i.ibb.co/d7RNH65/Frame-1.png",
+      "vehicleName": "Bus",
+      "VehicleNumber": 2,
+      "availableSeat": 30,
+      "rent": 15
+    },
+    {
+      "id": 4,
+      "vehicleImg": "https://i.ibb.co/8xymTFm/Group.png",
+      "vehicleName": "Train",
+      "VehicleNumber": 1,
+      "availableSeat": 200,
+      "rent": 18
+    }
+  ]
+  

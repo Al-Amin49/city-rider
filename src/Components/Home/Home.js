@@ -10,14 +10,14 @@ import {Link} from 'react-router-dom';
 const Home =()=>{
  const [loggedInUser, setLoggedInUser]= useContext(UserContext);
     return(
-      <Link to="/googleMap">
+    
           <div className="header-container" >
             <div className="img-head">
             <img src={bgImage} alt="" />
             </div>
           
           
-       <div className="box" onClick={()=>setLoggedInUser()}>
+       <div className="box" >
 
           <div className="vehicles">
           <div className=" vehicle">
@@ -37,8 +37,7 @@ const Home =()=>{
 
             </div>
             </div>
-        </Link>
-            
+     
           
         
       

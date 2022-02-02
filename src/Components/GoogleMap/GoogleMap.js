@@ -8,6 +8,7 @@ const GoogleMap = () => {
             <h3>This is google Map.</h3>
             <p>Name: {loggedInUser.name}</p>
             <p>Email: {loggedInUser.email}</p>
+            <p>Hello</p>
         </div>
     );
 };
