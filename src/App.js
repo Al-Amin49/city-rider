@@ -12,12 +12,14 @@ import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import Login from './Components/Login/Login';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
-import GoogleMap from './Components/GoogleMap/GoogleMap';
+import Destination from './Components/Destination/Destination';
+import Blog from './Components/Blog/Blog';
 export const UserContext = createContext()
 function App() {
- const [loggedInUser, setLoggedInUser]= useState({})
+ const [loggedInUser, setLoggedInUser]= useState({});
+ const [vehicleType, setVehicleType] = useState('');
   return (
-    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser,vehicleType , setVehicleType]}>
 
       <Router>
        <Header/>
@@ -28,8 +30,11 @@ function App() {
               <Route path="/login">
                 <Login/>
                 </Route>
-                <PrivateRoute path="/googleMap">
-              <GoogleMap/>
+                <Route path="/blog">
+                  <Blog/>
+                </Route>
+                <PrivateRoute path="/destination">
+              <Destination/>
                 </PrivateRoute>
 
               <Route path="/">

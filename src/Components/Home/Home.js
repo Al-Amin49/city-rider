@@ -1,47 +1,17 @@
-import React, {useContext} from 'react';
-import bgImage from '../../img/bg.png';
-import './Home.css'
-import bike from '../../img/bike.png'
-import car from '../../img/car.png'
-import bus from '../../img/bus.png'
-import train from '../../img/train.png'
-import {UserContext} from '../../App';
-import {Link} from 'react-router-dom';
-const Home =()=>{
- const [loggedInUser, setLoggedInUser]= useContext(UserContext);
-    return(
-    
-          <div className="header-container" >
-            <div className="img-head">
-            <img src={bgImage} alt="" />
-            </div>
-          
-          
-       <div className="box" >
+import React from 'react';
+import './Home.css';
+import data from '../../data/data.json';
+import Vehicles from '../Vehicles/Vehicles'
+ const Home =()=>{
 
-          <div className="vehicles">
-          <div className=" vehicle">
-           <img src={bike} alt="" />
+  return (
+    <div className='home-img d-flex flex-column align-items-center justify-content-around'>
+            <div className="wrapper d-flex flex-wrap align-items-center justify-content-around">
+                {
+                    data.map(vehicle => <Vehicles key={vehicle.id} vehicle={vehicle} > </Vehicles>)
+                }
             </div>
-            <div className=" vehicle">
-           <img src={bus} alt="" />
-            </div>
-
-            <div className=" vehicle">
-           <img src={car} alt="" />
-            </div>
-            <div className=" vehicle">
-           <img src={train} alt="" />
-            </div> 
-          </div>
-
-            </div>
-            </div>
-     
-          
-        
-      
-        
-    )
-};
-export default Home;
+        </div>
+  )
+}
+export default  Home
