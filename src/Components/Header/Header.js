@@ -26,7 +26,7 @@ const [loggedInUser, setLoggedInUser]= useContext(UserContext)
       </li>
     </ul>
    {
-     loggedInUser.email ?<p class="bg-success text-white mx-3 my-auto px-4 py-2 fw-bold rounded-pill">{loggedInUser.name}</p>:<button className="me-5 btn btn-success rounded-pill text-white py-2 px-4 fw-bold">Login</button>
+     loggedInUser.email ?<p class="bg-success text-white mx-3 my-auto px-4 py-2 fw-bold rounded-pill">{loggedInUser.name}</p>:<Link to="/login"><button className="me-5 btn btn-success rounded-pill text-white py-2 px-4 fw-bold">Login</button></Link>
 }
   </div>
 </nav>
